@@ -5,7 +5,14 @@ sdk: gradio
 sdk_version: 3.34.0
 ---
 # dolly-expert-lite
+A lightweight Dolly-v2 powered assistant that can answer domain-specific questions and keep a conversation. It's expert systems in the era of LLMs.
+
 Submission to the "So you think you can hack": open-source LLMs (e.g., OpenAssistant, MPT, Dolly, etc.) DevPost Hackathon.
+
+- [Dolly Expert Builder @ HuggingFace Spaces](https://huggingface.co/spaces/salgadev/dolly-expert-builder)
+- [Published Databricks Notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3137554102764464/588418364077599/6633303612634971/latest.html)
+- [Jupyter Notebook - GitHub Version](https://github.com/socd06/dolly-expert-lite/blob/main/Dolly_3B_Building_Code_Expert_Question_Answering_with_Memory.ipynb)
+
 
 ## Inspiration
 ### Expert systems
@@ -42,7 +49,7 @@ Being able to make a functional lightweight prototype of an LLM application usin
 
 
 ## What we learned
-In terms of general software development knowledge, I learned to troubleshoot packages conflicting with each other, learned that Python has to be restarted depending on what dependencies are installed or that sometimes it's better to compartamentalize tasks instead of trying to do everything at once. I also learned the basics of Gradio to be able to make the app. And most importantly, I learned to better navigate [GitHub issues](https://github.com/issues) and [StackOverflow](https://stackoverflow.co/) posts to find workarounds for the problems I encountered.
+In terms of general software development knowledge, I learned to troubleshoot packages conflicting with each other, learned that Python has to be restarted depending on what dependencies are installed or that sometimes it's better to compartmentalize tasks instead of trying to do everything at once. I also learned the basics of Gradio to be able to make the app. And most importantly, I learned to better navigate [GitHub issues](https://github.com/issues) and [StackOverflow](https://stackoverflow.co/) posts to find workarounds for the problems I encountered.
 
 In terms of LLM-related knowledge, I learned about the importance of prompt engineering and how it can dramatically improve your inference results, I learned to navigate the natural language processing (NLP) terminology a lot more, and I learned about types of question chain memory. I also learned that open-source models give the possibility to develop and deploy LLM applications to whoever is interested and puts in the time
 to research the documentation and troubleshoot or workaround current issues.
