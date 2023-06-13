@@ -91,7 +91,10 @@ examples = ["What are the requirements for plumbing venting and drainage systems
             "Summarize the electrical code regulation for wiring commercial buildings",
             "Tell me the maximum allowable span for floor joists in residential construction",
             "I'm looking for guidelines for fire assemblies and walls in tall buildings",
-            "What are the insulation requirements in new residential constructions?"]
+            "What are the insulation requirements in new residential constructions?",
+            "What is a professional engineer?",
+            "Do home builders need a license to work?",
+            "Define an electrician"]
 
 
 def process_example(args):
@@ -112,12 +115,13 @@ def generate(instruction):
 
 with gr.Blocks(analytics_enabled=False) as demo:
     with gr.Column():
-        gr.Markdown("""# Dolly-Expert-Lite         
+        gr.Markdown("""# 🐑 Dolly-Expert-Lite       
                     Dolly-Expert-Lite is a bot for domain specific question 
                     answering. Currently powered by the new Dolly-v2-3b open 
                     source model. It's expert systems in the era of LLMs!
 
-                    ## Building Code Expert 
+                    ## 🏗️ Building Code Expert                     
+                    
                     In this example deployment, Dolly-Expert-Lite retrieves 
                     information via a vector database made using the 
                     [Ontario (Canada) Building Code](https://www.buildingcode.online) 
