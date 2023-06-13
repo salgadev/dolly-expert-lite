@@ -1,10 +1,1 @@
-accelerate
-gradio
-einops
-Xformers
-langchain
-sentence-transformers
-chromadb
-unstructured
---extra-index-url https://download.pytorch.org/whl/cu118
-torch
+git+https://github.com/huggingface/optimum.git#egg=optimum[openvino]
