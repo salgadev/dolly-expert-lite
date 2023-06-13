@@ -7,6 +7,9 @@ from langchain.memory import ConversationBufferWindowMemory
 from langchain.vectorstores import Chroma
 from langchain import PromptTemplate, LLMChain
 
+from optimum.bettertransformer import BetterTransformer
+from optimum.intel import OVModelForCausalLM
+
 from transformers import AutoTokenizer, pipeline
 
 from typing import Dict, Any
@@ -36,14 +39,15 @@ def chatbot_llm_response(llm_response):
 
     return text
 
-
 model_name = "databricks/dolly-v2-3b"
 tokenizer = AutoTokenizer.from_pretrained(model_name, padding_side="left")
+model = OVModelForCausalLM.from_pretrained(model_name)
 
-generate_text = pipeline(model=model_name,
+generate_text = pipeline(model=model,
                          torch_dtype=torch.bfloat16,
                          trust_remote_code=True,
                          device_map="auto",
+                         accelerator="bettertransformer",
                          return_full_text=True,
                          max_new_tokens=256,
                          top_p=0.95,
