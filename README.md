@@ -23,7 +23,14 @@ Closed-source LLM applications like ChatGPT3.5 and ChatGPT-4 are gigantic models
 whatever task they struggle with by providing lots of information and implementing prompt engineering techniques. This makes more than one think that only the big companies with closed source code can develop and deploy LLM applications.
 
 ## What it does
-Dolly Expert Lite leverages [dolly-v2-3b](dolly-v2-3b), the lightweight version of [dolly-v2-12b](https://huggingface.co/databricks/dolly-v2-12b), an open-source large language model ([LLM](https://en.wikipedia.org/wiki/Large_language_model)) to answer domain-specific questions using retrieval in custom-made vector databases. In this example deployment, [dolly-expert-builder](https://huggingface.co/spaces/salgadev/dolly-expert-builder) retrieves information from the [Ontario (Canada) building code](https://www.buildingcode.online/) to answer specific questions about construction, plumbing, electrical wiring and ventilation as per the official government code. [dolly-expert-builder](https://huggingface.co/spaces/salgadev/dolly-expert-builder) can provide coherent and factually correct information with sources and can serve as guidance suitable for tradespeople (plumbers, electricians, mechanics, home builders) as well as engineers and architects to aid in regulatory compliance while performing work.
+Dolly Expert Lite leverages [dolly-v2-3b](dolly-v2-3b), the lightweight version of [dolly-v2-12b](https://huggingface.co/databricks/dolly-v2-12b), an open-source large language model ([LLM](https://en.wikipedia.org/wiki/Large_language_model)) to answer domain-specific questions using retrieval in custom-made vector databases. In this example deployment, [dolly-expert-builder](https://huggingface.co/spaces/salgadev/dolly-expert-builder) retrieves information from the [Ontario (Canada) building code](https://www.buildingcode.online/) to answer specific questions about construction, plumbing, electrical wiring and ventilation as per the official government code. [dolly-expert-builder](https://huggingface.co/spaces/salgadev/dolly-expert-builder) can provide coherent and factually correct information with sources and can serve as guidance suitable for tradespeople (plumbers, electricians, mechanics, home builders) as well as engineers and architects to aid in regulatory compliance while performing work. 
+
+By following this method, individuals and organizations can use their local data to make expert assistants able to answer domain-specific questions. Possible use cases include:
+- Spelling out Regulatory/Legal requirements
+- On-boarding and Training Support
+- Explaining Quality Systems 
+- Literature Reviews
+- Documentation search 
 
 
 ## How we built it
