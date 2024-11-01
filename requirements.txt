@@ -11,3 +11,4 @@ torch
 nltk>=3.8.2 # not directly required, pinned by Snyk to avoid a vulnerability
 aiohttp>=3.10.2 # not directly required, pinned by Snyk to avoid a vulnerability
 pillow>=10.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
+starlette>=0.40.0 # not directly required, pinned by Snyk to avoid a vulnerability
